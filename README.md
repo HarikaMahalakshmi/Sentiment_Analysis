@@ -67,4 +67,27 @@ Kaggle:https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie
 
 Place the CSV file inside the data/ folder to enable access by the scripts.
 
+## Flask Web Application
+
+This project also includes a Flask-based web application that allows users to:
+
+- Input movie reviews through a simple web interface.
+- Get real-time sentiment predictions (Positive or Negative).
+- View probability scores for the prediction.
+- See a user-friendly visualization of results.
+
+### How it works
+
+1. The Flask app loads the trained sentiment analysis model saved by the pipeline.
+2. When a user submits a review via the web form, the app preprocesses the input text.
+3. The preprocessed text is passed to the model for prediction.
+4. The prediction and confidence scores are displayed on the web page dynamically.
+
+### Running the Flask app
+
+Make sure you have Flask installed (`pip install flask`), then run:
+
+```bash
+python SentimentAnalysis/app.py
+
 
